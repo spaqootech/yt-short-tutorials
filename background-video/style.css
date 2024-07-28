@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#video{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+}
+#content{
+    background-color: rgba(12, 1, 114, 0.286);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 50px 100px;
+    margin-top: 34%;
+    position: absolute;
+    color: white;
+}
+#button{
+    padding: 10px 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+p{
+    font-size: 20px;
+}
