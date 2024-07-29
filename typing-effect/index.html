@@ -1,0 +1,38 @@
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    button{
+        font-size: 30px;
+        padding: 10px 30px;
+        cursor: pointer;
+    }
+    p{
+        font-size: 30px;
+    }
+</style>
+<h1>Writing effect</h1>
+<button onclick="writingEffect()">Click this</button>
+<p id="para"></p>
+<script>
+    let i = 0 ;
+    let text = 
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel cumque sint repudiandae nam culpa alias similique quos deleniti laboriosam dolorum. Quibusdam quas magni delectus perspiciatis reprehenderit doloribus repudiandae cum doloremque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel cumque sint repudiandae nam culpa alias similique quos deleniti laboriosam dolorum. Quibusdam quas magni delectus perspiciatis reprehenderit doloribus repudiandae cum doloremque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel cumque sint repudiandae nam culpa alias similique quos deleniti laboriosam dolorum. Quibusdam quas magni delectus perspiciatis reprehenderit doloribus repudiandae cum doloremque.";
+let speed = 50 ;
+
+function writingEffect(){
+    if(i < text.length){
+        document.getElementById('para').innerHTML += text.charAt(i);
+        i++;
+        setTimeout(writingEffect ,speed);
+    }
+}
+</script>
