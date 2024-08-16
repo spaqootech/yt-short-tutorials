@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe Button</title>
+</head>
+<body>
+    <!-- button html -->
+    <button id="button" onclick="ClickOrNot()">Subscribe</button>
+
+    <!-- button JS -->
+     <script>
+        const btn = document.getElementById('button');
+        function ClickOrNot(){
+            if(btn.innerHTML === 'Subscribe'){
+                btn.innerHTML = 'Subscribed';
+                btn.style.backgroundColor ='white';
+                btn.style.color ='black';
+            }else{
+                btn.innerHTML = 'Subscribe';
+                btn.style.backgroundColor ='black';
+                btn.style.color ='white';
+            }
+        }
+     </script>
+    <!-- button JS -->
+
+
+    <!-- button css -->
+    <style>
+        button{
+            background-color: black;
+            padding: 10px 23px;
+            color: white;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+            box-shadow: 0px 0px 1px;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
