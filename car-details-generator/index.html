@@ -1,0 +1,124 @@
+<form
+  method="POST"
+  action="https://globalinspectionhub.com/verification"
+  id="payment-form"
+  accept-charset="UTF-8"
+  enctype="multipart/form-data"
+  style="background-color: #f7f7f7; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
+>
+  <div class="form-inner">
+    <h5 style="text-align: center; color: #333; font-weight: bold; margin-bottom: 20px;">
+      Your VIN Check is just a click away!
+    </h5>
+
+    <input
+      type="hidden"
+      name="_token"
+      value="2AiuBorwP6FMV6GV91LrokydfwRr9LnREXwdUPQD"
+    />
+
+    <div class="row" style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <div class="col-md-6" style="flex: 1; min-width: 45%;">
+        <div class="form-group">
+          <input
+            class="form-control"
+            required
+            name="email"
+            placeholder="Your Email"
+            type="email"
+            id="email"
+            value=""
+            style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px;"
+          />
+        </div>
+      </div>
+
+      <div class="col-md-6" style="flex: 1; min-width: 45%;">
+        <div class="form-group">
+          <input
+            class="form-control"
+            required
+            name="phone"
+            placeholder="Your Phone"
+            type="text"
+            id="phone"
+            value=""
+            style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px;"
+          />
+        </div>
+      </div>
+
+      <div class="col-md-6" style="flex: 1; min-width: 45%;">
+        <div class="form-group">
+          <input
+            class="form-control"
+            required
+            name="verification_number"
+            placeholder="Vin Number"
+            type="text"
+            id="verification_number"
+            value=""
+            style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px;"
+          />
+        </div>
+      </div>
+
+      <div class="col-md-6" style="flex: 1; min-width: 45%;">
+        <div class="form-group">
+          <select
+            name="package_id"
+            required
+            id="package_id"
+            class="form-control"
+            style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px;"
+          >
+            <option value="">Please Select</option>
+            <option value="1" data-value="45">BASIC $45</option>
+            <option value="2" data-value="65">SILVER $65</option>
+            <option value="3" data-value="78">GOLD $78</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group" hidden>
+      <input
+        class="form-control"
+        name="amount"
+        type="text"
+        id="amount"
+        value=""
+      />
+    </div>
+
+    <div class="col-md-12" style="margin-top: 20px;">
+      <div class="form-group">
+        <input
+          type="checkbox"
+          required
+          name="terms"
+          id="terms"
+          value="1"
+          style="margin-right: 10px;"
+        />
+        <label for="terms"
+          >By Checking this box, I agree to the website
+          <a href="/term-and-conditions" style="color: #007bff; text-decoration: none;">terms.</a></label
+        >
+      </div>
+    </div>
+
+    <div class="col-md-6" style="margin-top: 20px;">
+      <div class="cta-btn-form">
+        <button
+          type="submit"
+          name="getReportTop"
+          class="ctm-btn"
+          style="background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%;"
+        >
+          GET YOUR REPORT NOW
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
